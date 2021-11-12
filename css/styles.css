@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+}
+
+/* Tabla */
+table.dataTable thead {
+    background: #0ebc95;
+    color:white;
+}
+
+.dataTables_length {
+    color: rgb(54, 54, 54);
+}
+
+.dataTables_filter {
+    color: rgb(54, 54, 54);
+}
+
+.dataTables_info {
+    color: rgb(54, 54, 54);
+}
+
+.dataTables_paginate {
+    color: rgb(54, 54, 54);
+}
+
+table.dataTable tbody {
+    background: rgb(255, 255, 255);
+    color:black;
+}
+
+.page-item.active .page-link {
+    background-color: #0ebc95!important;
+}
+
+.page-link {
+    color: rgb(54, 54, 54) !important;
+}
+
+.title {
+    font-size: 45px;
+    line-height: 1.1;
+    font-family: 'Oswald', sans-serif;
+    color: #8c3b3f;
+    text-align: center;
+    font-weight: 900;
+
+    border-bottom: 4px solid #0ebc95;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff;
+}
+
+/*  */
+.utld-logo {
+    width: 300px;
+}
