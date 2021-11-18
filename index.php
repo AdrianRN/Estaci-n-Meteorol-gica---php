@@ -29,7 +29,6 @@
     <input type="hidden" id="sensorInput3"></input>
     
 
-
     <div class="container">
         <div class="d-flex justify-content-around align-items-center">
             <img class="utld-logo" src="img/utld.png" alt="UTLD Logo">
@@ -47,6 +46,13 @@
                             <th>Sensor1</th>
                             <th>Sensor2</th>
                             <th>Sensor3</th>
+                            <th>Sensor4</th>
+                            <th>Sensor5</th>
+                            <th>Sensor6</th>
+                            <th>Sensor7</th>
+                            <th>Sensor8</th>
+                            <th>Sensor9</th>
+                            <th>Sensor10</th>
                         </thead>
         
                         <tbody>
@@ -80,17 +86,24 @@
        
        
         
-        if(href !== '' ){
+        if(href !== ''){
             const urlParams = new URLSearchParams(href);
 	        const sensorGet1 = urlParams.get('sensor1');
             const sensorGet2 = urlParams.get('sensor2');
             const sensorGet3 = urlParams.get('sensor3');
+            const sensorGet4 = urlParams.get('sensor4');
+            const sensorGet5 = urlParams.get('sensor5');
+            const sensorGet6 = urlParams.get('sensor6');
+            const sensorGet7 = urlParams.get('sensor7');
+            const sensorGet8 = urlParams.get('sensor8');
+            const sensorGet9 = urlParams.get('sensor9');
+            const sensorGet10 = urlParams.get('sensor10');
 
             $.ajax({
 				url:"insert.php",
 				method:"POST",
 				//enviar el codigo o serie de la herramienta
-				data:{sensor1: sensorGet1 , sensor2: sensorGet2, sensor3: sensorGet3},
+				data:{sensor1: sensorGet1, sensor2: sensorGet2, sensor3: sensorGet3, sensor4: sensorGet4, sensor5: sensorGet5, sensor6: sensorGet6, sensor7: sensorGet7, sensor8: sensorGet8, sensor9: sensorGet9, sensor10: sensorGet10},
 				success:function(data)
 				{
                     console.log("Data agregada");
@@ -113,6 +126,13 @@
                 {"data": "sensor1"},
                 {"data": "sensor2"},
                 {"data": "sensor3"},
+                {"data": "sensor4"},
+                {"data": "sensor5"},
+                {"data": "sensor6"},
+                {"data": "sensor7"},
+                {"data": "sensor8"},
+                {"data": "sensor9"},
+                {"data": "sensor10"},
             ],
             "language": {
                 "lengthMenu": "Mostrar _MENU_ registros por página",
